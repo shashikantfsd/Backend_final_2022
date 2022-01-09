@@ -28,7 +28,7 @@ exports.payment = (req, res) => {
     params['TXN_AMOUNT'] = amount.toString();
     params['EMAIL'] = email;
     params['MOBILE_NO'] = mobileNo.toString();
-    params['CALLBACK_URL'] = 'http://localhost:5402/api/paymentCallback';
+    params['CALLBACK_URL'] = 'https://backendshivesh2022.herokuapp.com/api/paymentCallback';
 
     // use PaytmChecksum.js to generate a signature
 
